@@ -1,0 +1,11 @@
+{
+  "name": "objectsort",
+  "version": "0.1.0",
+  "description": "Easy way to sort an array of objects by key.",
+  "main": "index.js",
+  "author": "Josemi Juanes <jmjuanes@outlook.com>",
+  "license": "MIT",
+  "files": ["LICENSE", "README.md", "index.js"],
+  "repository": {"type": "git", "url": "git://github.com/jmjuanes/objectsort.git"},
+  "keywords": ["array", "object", "sort"]
+}
