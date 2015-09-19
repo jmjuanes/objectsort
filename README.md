@@ -2,8 +2,8 @@
 
 Easy way to sort an array of objects by key.
 
-[![npm](https://img.shields.io/npm/v/dir2array.svg?style=flat-square)](https://www.npmjs.com/package/objectsort)
-[![npm](https://img.shields.io/npm/dt/dir2array.svg?style=flat-square)](https://www.npmjs.com/package/objectsort)
+[![npm](https://img.shields.io/npm/v/objectsort.svg?style=flat-square)](https://www.npmjs.com/package/objectsort)
+[![npm](https://img.shields.io/npm/dt/objectsort.svg?style=flat-square)](https://www.npmjs.com/package/objectsort)
 
 
 ## Install

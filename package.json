@@ -1,6 +1,6 @@
 {
   "name": "objectsort",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Easy way to sort an array of objects by key.",
   "main": "index.js",
   "author": "Josemi Juanes <jmjuanes@outlook.com>",
