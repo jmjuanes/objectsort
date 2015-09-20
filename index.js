@@ -54,5 +54,9 @@ function ArraySort(array)
 };
 
 
-//Exports to node
-module.exports = ObjectSort;
+//Check for exports
+if (typeof module === "object" && module.exports)
+{
+	//Export module
+	module.exports = ObjectSort;
+}
