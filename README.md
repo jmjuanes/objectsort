@@ -17,7 +17,19 @@ npm install objectsort
 
 ## Usage
 
-**ObjectSort** will return a new array with all the objects sorted by key. For example:
+```
+ObjectSort(array, columns, order);
+```
+
+Where:
+
+- `array`: array that you want to sort.
+- `columns`: an array or string with the `array` keys that you want to sort.
+- `order`: an array or string with the order. You must use `ASC`for ascendent order, or `DESC` for descendent order.
+
+The method returns a new array sorted with your specifications.
+
+Example of single column sort:
 
 ```javascript
 //Import library
@@ -25,21 +37,47 @@ var ObjectSort = require('objectsort');
 
 //Create the new array with your objects
 var array = [
-  {"id": 1, "name": "John"},
-  {"id": 2, "name": "Kevin"},
-  {"id": 3, "name": "Alexis"},
-  {"id": 4, "name": "Tom"}
+  { "id": 1, "name": "John" },
+  { "id": 2, "name": "Kevin" },
+  { "id": 3, "name": "Alexis" },
+  { "id": 4, "name": "Tom" }
 ];
 
-//Sort by name
-var sorted = ObjectSort(array, 'name');
+//Sort by name in ascendent order
+var sorted = ObjectSort(array, 'name', 'ASC');
 
 /* Will generate:
-[ { id: 3, name: 'Alexis' },
-  { id: 1, name: 'John' },
-  { id: 2, name: 'Kevin' },
-  { id: 4, name: 'Tom' } ]
+[ { "id": 2, "name": "Kevin" },
+  { "id": 1, "name": "John" },
+  { "id": 2, "name": "Kevin" },
+  { "id": 4, "name": "Tom" } ]
 */
+```
+
+Example of multicolumn sort:
+
+```javascript
+//Import library
+var ObjectSort = require('objectsort');
+
+//Create the new array with your objects
+var array = [
+  { "id": 1, "name": "John", "points": 40 },
+  { "id": 2, "name": "Kevin", "points": 50 },
+  { "id": 3, "name": "Alexis", "points": 30 },
+  { "id": 4, "name": "Tom", "points": 40 }
+];
+
+//First sort by points (order DESC) and then by name (order ASC)
+var sorted = ObjectSort(array, ['points', 'name'], ['DESC', 'ASC']);
+
+/* Will generate:
+[ { "id": 2, "name": "Kevin", "points": 50 },
+  { "id": 1, "name": "John", "points": 40 },
+  { "id": 4, "name": "Tom", "points": 40 },
+  { "id": 3, "name": "Alexis", "points": 30 } ]
+*/
+
 ```
 
 
