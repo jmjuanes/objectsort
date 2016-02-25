@@ -24,7 +24,12 @@ npm install objectsort
 var ObjectSort = require('objectsort');
 
 //Create the new array with your objects
-var array = [{"id": 1, "name": "John"}, {"id": 2, "name": "Kevin"}, {"id": 3, "name": "Alexis"}, {"id": 4, "name": "Tom"}];
+var array = [
+  {"id": 1, "name": "John"},
+  {"id": 2, "name": "Kevin"},
+  {"id": 3, "name": "Alexis"},
+  {"id": 4, "name": "Tom"}
+];
 
 //Sort by name
 var sorted = ObjectSort(array, 'name');
@@ -41,10 +46,3 @@ var sorted = ObjectSort(array, 'name');
 ## License
 
 **ObjectSort** is under the [MIT](LICENSE) license.
-
-
-
-
-
-
-
