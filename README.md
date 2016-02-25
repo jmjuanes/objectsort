@@ -54,7 +54,7 @@ var sorted = ObjectSort(array, 'name', 'ASC');
 */
 ```
 
-Example of multicolumn sort:
+Example of multi-column sort:
 
 ```javascript
 //Import library
