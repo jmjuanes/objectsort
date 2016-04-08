@@ -1,7 +1,7 @@
 {
 	"name": "objectsort",
 	"description": "Easy way to sort an array of objects by key.",
-	"main": "index.js",
+	"main": "dist/objectsort.js",
 	"ignore": [ "**/.*", "node_modules", "bower_components" ],
 	"dependencies": {},
 	"license": "MIT",
